@@ -1,0 +1,293 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #b95305;
+  background-image: linear-gradient(90deg,#535bb9,#df7320);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 200px;
+  margin-top: 20px;
+
+}
+
+.ProjectDetails, .InputDetails, .OutputDetails {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.AnandMinconsLogo {
+  text-align: center;
+  margin: 30px;
+}
+
+.EndButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.EndButtons input[type="button"], .Logout button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #535bb9;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.EndButtons input[type="button"]:hover, .Logout button:hover {
+  background: #df7320;
+  transform: scale(1.05);
+}
+
+
+form label, form input, form select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #df7320;
+}
+
+label {
+  font-weight: bold; /* Make all label text bold */
+  color: #535bb9;
+}
+
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+input[type="button"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #339966;
+  color: #fff;
+}
+
+/* Existing CSS */
+
+/* Add a transition to the login button */
+input[type="button"] {
+  transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+}
+
+/* Create a hover effect for the login button */
+input[type="button"]:hover {
+  background-color: #339966;
+  color: #fff;
+  box-shadow: 0px 12px 20px -10px rgba(0, 0, 0, 0.25), 
+              0px 17px 50px -10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Create an active (on click) effect for the login button */
+input[type="button"]:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 7px 14px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* Animate the login button when the page loads */
+@keyframes buttonEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[type="button"] {
+  animation: buttonEntrance 1s ease-out;
+}
+
+
+
+.RemarkBox {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 210px;
+  height: 400px;
+  
+}
+
+.RemarkBoxInner {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  height: 100%;
+}
+
+.ql-editor{
+  padding: 5px;
+}
+.ql-toolbar {
+  background-color: #f2f2f2;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: 10px;
+}
+
+#editor {
+  flex: 1;
+  margin: 0px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+.tunnel-dimension {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.dimension {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px ;
+}
+
+.x {
+  margin: 0 10px;
+}
+
+.tunnel-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.detail label {
+  margin-bottom: 5px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+#RAV {
+  height: 15px; /* Adjust this value to your preference */
+}
+
+.custom-select {
+  width: 150px; /* Adjust this value to your preference */
+}
+
+#typeoftunnel {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+
+
+
+
+.button-container, .Logout {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.EndButtons input[type="button"], .Logout button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #535bb9;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.EndButtons input[type="button"]:hover, .Logout button:hover {
+  background: #df7320;
+  transform: scale(1.05);
+}
+
+#Calculate {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #535bb9;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#Calculate:hover {
+  background: #df7320;
+  transform: scale(1.05);
+}
+
+#Calculate:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 7px 14px -6px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes buttonEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#Calculate {
+  animation: buttonEntrance 1s ease-out;
+}

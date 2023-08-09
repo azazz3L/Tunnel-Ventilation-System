@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ANAND MINCONS</title>
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Main">
+        <div class="AnandMinconsLogo">
+            <img src="anand_mincons_logo.png" alt="ANAND MINCONS"/>
+        </div>
+        <div class="Content">
+            <!-- This is used to collect input from the user -->
+
+    <div class="ClientInput">
+        <div class="container">
+        <!-- This is for Creating the Box of Project Details -->
+        <div class="ProjectDetails" style="border: 1px solid gray; text-align: left;
+        background-color: white;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);">
+            <h2>PROJECT PARAMETERS</h2>
+            <div class="Company Name" style="margin: 10px;">
+                <label for="Company Name">Company Name</label>
+                <input type="text" id="CompanyName" name="Company Name" />
+            </div>
+
+            <div class="Project Name" style="margin: 10px;">
+                <label for="Project Name">Project Name</label>
+                <input type="text" id="ProjectName" name="Project Name" />
+            </div>
+
+            <div class="Tunnel Name" style="margin: 10px;">
+                <label for="Tunnel Name">Tunnel Name</label>
+                <input type="text" id="TunnelName" name="Tunnel Name" />
+            </div>
+
+            <div class="tunnel-dimension">
+                <div class="dimension">
+                    <label for="TunnelHeight">Tunnel Height</label>
+                    <input type="text" id="TunnelHeight" name="Tunnel Height" />
+                </div>
+                <div class="x">x</div>
+                <div class="dimension">
+                    <label for="TunnelWidth">Tunnel Width</label>
+                    <input type="text" id="TunnelWidth" name="Tunnel Width" />
+                </div>
+            </div>
+
+          
+
+            <div class="tunnel-details">
+                <div class="RAV detail">
+                  <label for="RAV">RAV [m/s]</label>
+                  <input type="text" id="RAV" name="RAV" />
+                </div>
+                <div class="TypeofTunnel detail">
+                  <label for="TypeofTunnel">Type of Tunnel</label>
+                  <select name="TypeofTunnel"  class="custom-select" id="typeoftunnel">
+                    <option value="" selected disabled>Select Option</option>
+                    <option value="D-Shape">D-Shape</option>
+                    <option value="HorseShoe">Horseshoe</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="Tunnel Area" style="margin: 10px; ">
+                <label for="Tunnel Area">Tunnel Area</label>
+                <input type="text" id="TunnelArea" name="Tunnel Area" />
+            </div>
+
+            <div class="TypeofExcavation" style="margin: 10px;">
+                <label for="TypeofExcavation">Type of Excavation</label>
+                <select name="TypeofExcavation"  class="custom-select">
+                <option value="" selected disabled>Select Option</option>
+                <option value="TBM">TBM</option>
+                <option value="Heading and Benching">Heading and Benching</option>
+                </select>
+            </div>
+
+            <div class="Production Days" style="margin: 10px;">
+                <label for="Production Days">Production Days</label>
+                <input type="text" id="ProductionDays" name="Production Days" />
+            </div>
+
+            <div class="ElectricityCost" style="margin: 10px;">
+                <label for="ElectricPowerPrice">Electric Power Price</label>
+                <div style="display: flex;">
+                    <input type="text" id="ElectricPowerPrice" name="ElectricPowerPrice" />
+                    <select name="CurrencyPerKWH" id="CurrencyPerKWH">
+                        <option value="INR">INR/kWh</option>
+                        <option value="USD">USD/kWh</option>
+                        <option value="EUR">EUR/kWh</option>
+                        <option value="GBP">GBP/kWh</option>
+                        <option value="JPY">JPY/kWh</option>
+                        <option value="CNY">CNY/kWh</option>
+                        <option value="AUD">AUD/kWh</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+            </div>
+            
+            <h2>OTHER PARAMETERS</h2>
+            <div class="Project Number" style="margin: 10px;">     
+                <label for="Project Number">Project Number</label>      
+                <input type="text" id="ProjectNumber" name="ProjectNumber" />
+            </div>
+
+            <div class="Project Date" style="margin: 10px;">
+                <label for="Project Date">Project Date</label>
+                <input type="text" id="ProjectDate" name="Project Date" />
+            </div>
+
+            <div class="Duct Classification" style="margin: 10px;">
+                <label for="Duct Classification">Duct Classification</label>
+                <select name="DuctClassification">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="X">X</option>
+                </select>
+            </div>
+
+            <div class="Application" style="margin: 10px;">
+                <label for="Application">Application</label>
+                <input type="text" id="Application" name="Application" />
+            </div>
+
+            <div class="Person in Charge" style="margin: 10px;">
+                <label for="PersoninCharge">Person in Charge</label>
+                <input type="text" id="PersoninCharge" name="PersoninCharge" />
+            </div>
+
+            <div class="Customer" style="margin: 10px;">
+                <label for="Customer">Customer</label>
+                <input type="text" id="Customer" name="Customer" />
+            </div>
+        </div>
+        <!-- This is for Creating the Box of Input -->
+        <div class="InputDetails" style="border: 1px solid gray; text-align: left;
+        background-color: white;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);">
+            <h2>INPUT DETAILS</h2>
+            <div class="FrictionCoefficient" style="margin: 10px;">
+                <label for="FrictionCoefficient">Friction Coefficient</label>      
+                <input type="text" id = "FrictionCoefficient" name = "FrictionCoefficient" />
+            </div>
+
+            <div class="Leakage" style="margin: 10px;">
+                <label for="Project Date">Leakage</label>
+                <input type="text" id="Leakage" name="Leakage" />
+            </div>
+
+            <div class="SiteHeightM" style="margin: 10px;">
+                <label for="SiteHeightM">Site Height [m]</label>
+                <input type="text" id="SiteHeightM" name="SiteHeightM" />
+            </div>
+
+            <div class="Temperature" style="margin: 10px;">
+                <label for="Temperature">Temperature [degree C]</label>
+                <input type="text" id="Temperature" name="Temperature" />
+            </div>
+
+            <div class="AirVolume" style="margin: 10px;">
+                <label for="AirVolume">AirVolume at Front [cbm/s]</label>
+                <input type="text" id="AirVolume" name="AirVolume" />
+            </div>
+            
+            <div class="PressureatDuctEnd" style="margin: 10px;">
+                <label for="PressureatDuctEnd">Pressure at Duct End [Pa]</label>
+                <input type="text" id="PressureatDuctEnd" name="PressureatDuctEnd" />
+            </div>
+
+            <div class="DuctLength" style="margin: 10px;">
+                <label for="DuctLength">Duct Length [m]"</label>
+                <input type="text" id="DuctLength" name="DuctLength" />
+            </div>
+            
+            <div class="DuctDiameter" style="margin: 10px;">
+                <label for="DuctDiameter">Duct Diameter [m]</label>
+                <input type="text" id="DuctDiameter" name="DuctDiameter" />
+            </div>
+
+            <div class="VentilatorEfficiency" style="margin: 10px;">
+                <label for="VentilatorEfficiency">Ventilator Efficiency</label>
+                <input type="text" id="VentilatorEfficiency" name="VentilatorEfficiency" />
+            </div>
+
+            <div class="ZetaLossFactor" style="margin: 10px;">
+                <label for="ZetaLossFactor">Zeta Loss Factor</label>
+                <input type="text" id="ZetaLossFactor" name="ZetaLossFactor" />
+            </div>
+        </div>
+
+        <!-- This is for Creating the Box of Output -->
+        <div class="OutputDetails" style="border: 1px solid gray; text-align: left;
+        background-color: white;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);">
+            <h2>OUTPUT</h2>
+            <div class="AirDensity" style="margin: 10px;"> 
+                <label for="AirDensity">Air Density [kgm-3]</label>      
+                <input type="text" id = "AirDensity" name = "AirDensity" />
+            </div>
+
+            <div class="LDFactor" style="margin: 10px;">
+                <label for="LDFactor">L/D Factor</label>
+                <input type="text" id="LDFactor" name="LDFactor" />
+            </div>
+
+            <div class="PressureFactora1" style="margin: 10px;">
+                <label for="PressureFactora1">Pressure Factor a1</label>
+                <input type="text" id="PressureFactora1" name="PressureFactora1" />
+            </div>
+
+            <div class="LossFactor" style="margin: 10px;">
+                <label for="LossFactor">Loss Factor e1</label>
+                <input type="text" id="LossFactor" name="LossFactor" />
+            </div>
+
+            <div class="VentilatorVolumeSupply" style="margin: 10px;">
+                <label for="VentilatorVolumeSupply">Ventilator Volume Supply [cbm/s]</label>
+                <input type="text" id="VentilatorVolumeSupply" name="VentilatorVolumeSupply" />
+            </div>
+            
+            <div class="StatPressureLoss" style="margin: 10px;">
+                <label for="StatPressureLoss">Stat. Pressure Loss [Pa]</label>
+                <input type="text" id="StatPressureLoss" name="StatPressureLoss" />
+            </div>
+
+            <div class="DynPressureLoss" style="margin: 10px;">
+                <label for="DynPressureLoss">Dyn. Pressure Loss [Pa]"</label>
+                <input type="text" id="DynPressureLoss" name="DynPressureLoss" />
+            </div>
+            
+            <div class="AdditLosses" style="margin: 10px;">
+                <label for="AdditLosses">Addit. Losses [Pa]</label>
+                <input type="text" id="AdditLosses" name="AdditLosses" />
+            </div>
+
+            <div class="TotalPressureLoss" style="margin: 10px;">
+                <label for="TotalPressureLoss">Total Pressure Loss [Pa]</label>
+                <input type="text" id="TotalPressureLoss" name="TotalPressureLoss" />
+            </div>
+
+            <div class="MinimumInstCapacity" style="margin: 10px;">
+                <label for="MinimumInstCapacity">Minimum Inst. Capacity [kW]</label>
+                <input type="text" id="MinimumInstCapacity" name="MinimumInstCapacity" />
+            </div>
+            <div class="Cost Of Electricity" style="margin: 10px;">
+                <label for="Cost Of Electricity">Cost Of Electricity</label>
+                <input type="text" id="CostOfElectricity" name="Cost Of Electricity" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="RemarkBox">
+    <div class="RemarkBoxInner">
+    <label>Remarks:</label>
+    <div id="editor"></div>
+</div>
+  </div>
+ 
+   
+    <!-- This is for the Buttons at the End -->
+    <div class="EndButtons">
+            
+        <div class="Calculate">
+            <input type="button" name="Calculate" value="Calculate" id="Calculate" />
+        </div>
+    
+        <div class="button-container">
+            <div class="Save">
+                <input type="button" name="Save" value="Save" id="Save" />
+            </div>
+            <div class="Generate">
+                <input type="button" name="Generate" value="Generate" id="Generate" />
+            </div>
+        </div>
+    
+        <div class="Logout">
+            <div>
+                <button onclick="location.href='/logout'">Logout</button>
+            </div>
+            <div id="adminConsoleButton" style="display: none;">
+                <a href="/admin">
+                    <button>Admin Console</button>
+                </a>
+            </div>
+    </div>
+    
+</div>
+    </form>
+</div>
+</div>
+</div>
+
+</body>
+</html>

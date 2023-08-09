@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= calculatedValues.projectNumber %></title>
+    <link rel="stylesheet" type="text/css" href="styletemplate.css">
+  </head>
+  <body>
+    <img src="anand_mincons_logo.png" alt="Logo" />
+    <div class="container">
+    
+
+    <div class="content-box">
+    <div class="project-details">
+      <h2>Project Parameters</h2>
+      <div class="project-parameters-container">
+        <div class="project-parameters-left">
+          <p><strong>Company Name:</strong> <%= calculatedValues.companyName %></p>
+          <p><strong>Project Name:</strong> <%= calculatedValues.projectName %></p>
+          <p><strong>Tunnel Name:</strong> <%= calculatedValues.tunnelName %></p>
+          <p><strong>Tunnel Height:</strong> <%= calculatedValues.tunnelHeight %> m</p>
+          <p><strong>Tunnel Width:</strong> <%= calculatedValues.tunnelWidth %> m</p>
+          <p><strong>RAV:</strong> <%= calculatedValues.rav %> m/s</p>
+        </div>
+        <div class="project-parameters-right">
+          <p><strong>Type of Tunnel:</strong> <%= calculatedValues.tunnelType %></p>
+          <p><strong>Tunnel Area:</strong> <%= calculatedValues.tunnelArea %> sq.m</p>
+          <p><strong>Type of Excavation:</strong> <%= calculatedValues.excavationType %></p>
+          <p><strong>Production Days:</strong> <%= calculatedValues.productionDays %></p>
+          <p><strong>Electric Power Price:</strong> <%= calculatedValues.electricPowerPrice %> <%= calculatedValues.currency %>/kWh</p>
+        </div>
+      </div>
+      <hr style="border-top: 1px solid #cccc; margin: 20px 0;">
+      <h2>Other Parameters</h2>
+      <div class="project-parameters-container">
+        <div class="project-parameters-left">
+          <p><strong>Project Number:</strong> <%= calculatedValues.projectNumber %></p>
+          <p><strong>Project Date:</strong> <%= calculatedValues.projectDate %></p>
+          <p><strong>Duct Classification:</strong> <%= calculatedValues.ductClassification %></p>
+        </div>
+        <div class="project-parameters-right">
+          <p><strong>Application:</strong> <%= calculatedValues.application %></p>
+          <p><strong>Person In Charge:</strong> <%= calculatedValues.personIncharge %></p>
+          <p><strong>Customer:</strong> <%= calculatedValues.customer %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="tables-container print-page-break">
+      <div class="table-wrapper">
+        <h2>Input Parameters</h2>
+        <table>
+          <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+          </tr>
+          <!-- Add your input parameters here -->
+          <tr>
+            <td class="flex-container">
+              <span><strong>Friction Coefficient (λ)</strong></span>
+              <td><%= calculatedValues.fricCoeffInt %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Leakage (ғғ)</strong></span>
+              <td><%= calculatedValues.leakage %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Site Height (m)</strong></span>
+              <td><%= calculatedValues.siteHeight %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Temperature (°C)</strong></span>
+              <td><%= calculatedValues.temperature %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Air Volume at Front (cu. m/s)</strong></span>
+              <td><%= (calculatedValues.airVolAtFront).toFixed(2) %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Pressure at Duct End (Pa)</strong></span>
+              <td><%= calculatedValues.pressureAtDuctEnd %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Duct Length (m)</strong></span>
+              <td><%= calculatedValues.ductLength %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Duct Diameter (m)</strong></span>
+              <td><%= (calculatedValues.ductDiameter).toFixed(2) %></td>
+            </td>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Ventilator Efficiency</strong></span>
+              <td><%= (calculatedValues.ventilatorEfficiency).toFixed(2) %></td>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Zeta Loss Factor</strong></span>
+              <td><%= (calculatedValues.zetaLossFactor).toFixed(2) %></td>
+            </td>
+          </tr>
+          <!-- ... Additional input parameters -->
+        </table>
+      </div>
+
+      <div class="table-wrapper">
+        <h2>Output Parameters</h2>
+        <table>
+          <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Air Density</strong></span>
+            </td>
+            <td><%= (calculatedValues.airDensity).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>L/D Factor</strong></span>
+            </td>
+            <td><%= (calculatedValues.ldFactor).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Pressure Factor (π1)</strong></span>
+            </td>
+            <td><%= (calculatedValues.pressureFactor).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Loss Factor (Qf/Qo)</strong></span>
+            </td>
+            <td><%= (calculatedValues.lossFactor).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Ventilator Volume Supply (cu. m/s)</strong></span>
+            </td>
+            <td><%= (calculatedValues.ventilatorVolumeSupply).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Stat. Pressure Loss (Pa)</strong></span>
+            </td>
+            <td><%= (calculatedValues.statPressureLoss).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Dyn. Pressure Loss (Pa)</strong></span>
+            </td>
+            <td><%= (calculatedValues.dynPressureLoss).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Addit. Losses (Pa)</strong></span>
+            </td>
+            <td><%= (calculatedValues.additLosses).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Total Pressure Loss (Pa)</strong></span>
+            </td>
+            <td><%= (calculatedValues.totalPressureLoss).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Min. Inst. Capacity (KW)</strong></span>
+            </td>
+            <td><%= (calculatedValues.kw).toFixed(2) %></td>
+          </tr>
+          <tr>
+            <td class="flex-container">
+              <span><strong>Electricity Cost</strong></span>
+            </td>
+            <td><%= calculatedValues.costOfElectricty %></td>
+          </tr>
+          <!-- ... Additional output parameters -->
+        </table>
+      </div>
+    </div>
+    <h2>Remarks</h2>
+    <div class="content-box">
+     
+      <%- htmlContent %>
+    </div>
+    </div>
+  </div>
+  </body>
+</html>

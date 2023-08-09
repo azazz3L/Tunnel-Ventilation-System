@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(45deg,#F86F03, #525FE1);
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: #525FE1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header button:hover {
+  background: #F86F03;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.table-container {
+  margin: 20px 30px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table a {
+  color: #F86F03;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid #F86F03;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+table a:hover {
+  color: #fff;
+  background: #F86F03;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.search-bar {
+  position: relative;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  padding: 10px 20px 10px 40px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  color: #525FE1;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header .button-group {
+  display: flex;
+  justify-content: space-between;
+}
