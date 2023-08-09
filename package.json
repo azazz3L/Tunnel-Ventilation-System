@@ -148,8 +148,8 @@
     "socks-proxy-agent": "^8.0.1",
     "source-map": "^0.6.1",
     "statuses": "^2.0.1",
-    "string_decoder": "^1.3.0",
     "string-width": "^4.2.3",
+    "string_decoder": "^1.3.0",
     "strip-ansi": "^6.0.1",
     "supports-color": "^5.5.0",
     "tar-fs": "^2.1.1",
@@ -187,7 +187,6 @@
     "type": "git",
     "url": "git+https://github.com/DeerghKataria/Tunnel-Ventilation-System-Web-App.git",
     "start": "node server.js"
-
   },
   "keywords": [],
   "author": "",
@@ -195,5 +194,8 @@
   "bugs": {
     "url": "https://github.com/DeerghKataria/Tunnel-Ventilation-System-Web-App/issues"
   },
-  "homepage": "https://github.com/DeerghKataria/Tunnel-Ventilation-System-Web-App#readme"
+  "homepage": "https://github.com/DeerghKataria/Tunnel-Ventilation-System-Web-App#readme",
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.3"
+  }
 }
