@@ -47,7 +47,7 @@ const url = "mongodb+srv://hitesh_khanna:AnandMincons@cluster0.sc5xhui.mongodb.n
 const dbName = "AnandMincons"; // REPLACE WITH YOUR DATABASE NAME
 
 app.get("/login", function (req, res) {
-  res.sendFile(path.join(__dirname, "/loginpage.html"));
+  res.sendFile(path.join(__dirname, "/index.html"));
 });
 
 app.get("/register", function (req, res) {
